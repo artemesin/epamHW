@@ -10,4 +10,16 @@ public class Person {
         this.lastName = lastName;
         this.serialAndNumberOfPassport = serialAndNumberOfPassport;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getSerialAndNumberOfPassport() {
+        return serialAndNumberOfPassport;
+    }
 }

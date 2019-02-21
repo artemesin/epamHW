@@ -3,14 +3,17 @@ package hw200219.service;
 import hw200219.City.repo.CityRepo;
 import hw200219.Country.repo.CountryRepo;
 import hw200219.Order.Order;
+import hw200219.Order.repo.OrderRepo;
 
 public class Operator {
     private final CountryRepo countryRepo;
     private final CityRepo cityRepo;
+    private final OrderRepo orderRepo;
 
-    public Operator(CountryRepo countryRepo, CityRepo cityRepo) {
+    public Operator(CountryRepo countryRepo, CityRepo cityRepo, OrderRepo orderRepo) {
         this.countryRepo = countryRepo;
         this.cityRepo = cityRepo;
+        this.orderRepo = orderRepo;
     }
 
     public String checkOrder(Order order){
@@ -32,6 +35,8 @@ public class Operator {
     }
 
     public void confirm(Order order){
-
+        orderRepo.addOrder(order);
     }
+
+
 }

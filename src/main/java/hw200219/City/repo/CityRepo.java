@@ -8,9 +8,6 @@ public class CityRepo {
     private int lastCityIndex = -1;
 
 
-    public CityRepo(City[] cities) {
-        this.cities = cities;
-    }
 
     public void addCity(City city) {
         if (lastCityIndex == cities.length - 1) {

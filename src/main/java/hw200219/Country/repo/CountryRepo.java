@@ -8,10 +8,6 @@ public class CountryRepo {
     private int lastCountryIndex = -1;
 
 
-    public CountryRepo(Country[] countries) {
-        this.countries = countries;
-    }
-
     public void addCountry(Country country) {
         if (lastCountryIndex == countries.length - 1) {
             Country[] newArrCountries = new Country[this.countries.length * 2];
@@ -32,5 +28,5 @@ public class CountryRepo {
         return null;
     }
 
-     
+
 }
