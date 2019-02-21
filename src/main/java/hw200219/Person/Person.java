@@ -1,9 +1,9 @@
-package hw200219;
+package hw200219.Person;
 
 public class Person {
-    private String name;
-    private String lastName;
-    private String serialAndNumberOfPassport;
+    private final String name;
+    private final String lastName;
+    private final String serialAndNumberOfPassport;
 
     public Person(String name, String lastName, String serialAndNumberOfPassport) {
         this.name = name;
