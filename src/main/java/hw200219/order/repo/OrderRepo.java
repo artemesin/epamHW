@@ -1,6 +1,6 @@
-package hw200219.Order.repo;
+package hw200219.order.repo;
 
-import hw200219.Order.Order;
+import hw200219.order.Order;
 
 public class OrderRepo {
     private static final int CAPACITY = 5;

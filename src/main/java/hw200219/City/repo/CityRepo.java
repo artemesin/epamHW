@@ -1,6 +1,6 @@
 package hw200219.City.repo;
 
-import hw200219.City.City;
+import hw200219.City.domain.City;
 
 public class CityRepo {
     private static final int CAPACITY = 5;

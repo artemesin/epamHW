@@ -1,6 +1,6 @@
-package hw200219.Order;
+package hw200219.order;
 
-import hw200219.Person.Person;
+import hw200219.person.Person;
 
 public class Order {
     private final Person person;

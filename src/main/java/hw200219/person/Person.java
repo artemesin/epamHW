@@ -1,4 +1,4 @@
-package hw200219.Person;
+package hw200219.person;
 
 public class Person {
     private final String name;

@@ -1,23 +1,23 @@
 package hw200219.service;
 
 import hw200219.City.repo.CityRepo;
-import hw200219.Country.repo.CountryRepo;
-import hw200219.Order.Order;
-import hw200219.Order.repo.OrderRepo;
+import hw200219.Country.repo.impl.CountryMemoryRepo;
+import hw200219.order.Order;
+import hw200219.order.repo.OrderRepo;
 
 public class Operator {
-    private final CountryRepo countryRepo;
+    private final CountryMemoryRepo countryMemoryRepo;
     private final CityRepo cityRepo;
     private final OrderRepo orderRepo;
 
-    public Operator(CountryRepo countryRepo, CityRepo cityRepo, OrderRepo orderRepo) {
-        this.countryRepo = countryRepo;
+    public Operator(CountryMemoryRepo countryMemoryRepo, CityRepo cityRepo, OrderRepo orderRepo) {
+        this.countryMemoryRepo = countryMemoryRepo;
         this.cityRepo = cityRepo;
         this.orderRepo = orderRepo;
     }
 
     public String checkOrder(Order order){
-        if(countryRepo.findCountryByName(order.getCountry()) == null){
+        if(countryMemoryRepo.findCountryByName(order.getCountry()) == null){
             return "Country is not available for our agency";
         }
         if (cityRepo.findCityByName(order.getCity()) == null){

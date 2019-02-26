@@ -1,4 +1,4 @@
-package hw200219.City;
+package hw200219.City.domain;
 
 public class City {
 
