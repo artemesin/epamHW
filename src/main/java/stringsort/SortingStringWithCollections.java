@@ -12,9 +12,8 @@ public class SortingStringWithCollections {
     static List<String> stringList = new ArrayList<String>();
 
     public static void init(){
-        String temp;
         for (int i = 0; i < n; i++) {
-            temp  = sc.nextLine();
+            String temp  = sc.nextLine();
             stringList.add(temp);
         }
         Collections.sort(stringList);
