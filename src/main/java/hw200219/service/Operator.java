@@ -17,12 +17,12 @@ public class Operator {
     }
 
     public String checkOrder(Order order){
-        if(countryMemoryRepo.findCountryByName(order.getCountry()) == null){
+       /* if(countryMemoryRepo.findCountryByName(order.getCountry()) == null){
             return "Country is not available for our agency";
         }
         if (cityRepo.findCityByName(order.getCity()) == null){
             return "City is not available for our agency";
-        }
+        }*/
         return "All is OK";
     }
 

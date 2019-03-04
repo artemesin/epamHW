@@ -8,4 +8,6 @@ public interface CountryRepo extends BaseRepo {
     void add(Country country);
 
     Country findById(long id);
+
+    boolean findCountryByName(String country);
 }

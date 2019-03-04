@@ -13,9 +13,9 @@ public class Main {
     public static void main(String[] args) {
         Person person = new Person("Ivan", "Demkin", "0000_12321231");
         City madrid = new City("Madrid", 1000000, true);
-        Country spain = new Country("Spain", "spanish", new City[]{madrid});
+       // Country spain = new Country("Spain", "spanish", new City[]{madrid});
         CountryMemoryRepo countryMemoryRepo = new CountryMemoryRepo();
-        countryMemoryRepo.addCountry(spain);
+       // countryMemoryRepo.addCountry(spain);
         CityRepo cityRepo = new CityRepo();
         cityRepo.addCity(madrid);
         OrderRepo orderRepo = new OrderRepo();

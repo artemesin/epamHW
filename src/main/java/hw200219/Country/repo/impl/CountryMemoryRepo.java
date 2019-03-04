@@ -24,6 +24,11 @@ public class CountryMemoryRepo implements CountryRepo {
     }
 
     @Override
+    public boolean findCountryByName(String country) {
+        return false;
+    }
+
+    @Override
     public void deleteById(long id) {
         Integer countryIndex = findCountryByIndex(id);
         if (countryIndex != null){
